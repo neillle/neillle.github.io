@@ -1,0 +1,1396 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>久久黑料_深度观察与真相追踪_久久黑料官方网站</title>
+<meta name="description" content="久久黑料官方网站，专注深度观察与真相追踪的原创视频品牌，持续输出高品质调查内容与多元观点。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23181716'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23e8453c' stroke-width='2.5'/%3E%3Cpath d='M16 9v7l5 3' stroke='%23fbf7f0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --paper:#fbf7f0;
+  --ink:#181716;
+  --ink-soft:#4d4a45;
+  --rule:#d9d2c5;
+  --accent:#e8453c;
+  --accent-dark:#b52d26;
+  --gold:#c8a15a;
+  --card:#ffffff;
+  --shadow:0 10px 30px rgba(24,23,22,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  font-family:"Noto Serif SC","Songti SC","STSong",Georgia,serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.jji-wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}
+.jji-serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif}
+
+/* ===== 吸顶区：公告条 + 页头 ===== */
+.jji-sticky-top{
+  position:sticky;top:0;z-index:120;
+  box-shadow:0 1px 0 var(--rule);
+}
+.jji-announce{
+  background:var(--ink);color:var(--paper);
+  font-size:13px;letter-spacing:.02em;
+  display:flex;align-items:center;gap:14px;
+  padding:9px 0;overflow:hidden;
+}
+.jji-announce .jji-wrap{display:flex;align-items:center;gap:14px;flex-wrap:nowrap}
+.jji-announce-tag{
+  flex:0 0 auto;background:var(--accent);color:#fff;
+  font-weight:700;font-size:11px;letter-spacing:.14em;
+  padding:2px 9px;border-radius:2px;
+}
+.jji-announce-text{
+  flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  color:#ece6da;
+}
+.jji-announce-text b{color:#fff;font-weight:600}
+.jji-announce-more{flex:0 0 auto;color:var(--gold);font-size:12px}
+.jji-header{
+  background:rgba(251,247,240,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule);
+}
+.jji-header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;padding:14px 0;
+}
+.jji-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.jji-brand-mark{
+  width:42px;height:42px;border-radius:50%;
+  border:2.5px solid var(--ink);position:relative;flex:0 0 auto;
+}
+.jji-brand-mark::after{
+  content:"";position:absolute;inset:8px;border-radius:50%;
+  background:var(--accent);
+}
+.jji-brand-name{
+  font-size:21px;font-weight:700;letter-spacing:.06em;line-height:1.15;
+}
+.jji-brand-name small{
+  display:block;font-size:10px;letter-spacing:.32em;
+  font-weight:400;color:var(--ink-soft);margin-top:2px;
+}
+.jji-nav{display:flex;align-items:center;gap:26px;font-size:15px}
+.jji-nav a{
+  position:relative;padding:4px 0;color:var(--ink-soft);
+  transition:color .2s;
+}
+.jji-nav a:hover{color:var(--accent)}
+.jji-nav a::after{
+  content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;
+  background:var(--accent);transition:width .22s;
+}
+.jji-nav a:hover::after{width:100%}
+.jji-header-tools{display:flex;align-items:center;gap:12px}
+.jji-search{
+  display:flex;align-items:center;
+  border:1px solid var(--rule);border-radius:999px;
+  background:#fff;padding:4px 5px 4px 14px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.jji-search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(232,69,60,.13)}
+.jji-search input{
+  border:none;outline:none;background:transparent;
+  font-family:inherit;font-size:13px;width:132px;color:var(--ink);
+}
+.jji-search input::placeholder{color:#a49e92}
+.jji-search button{
+  background:var(--ink);color:var(--paper);border-radius:999px;
+  width:28px;height:28px;display:grid;place-items:center;font-size:13px;
+  transition:background .2s;
+}
+.jji-search button:hover{background:var(--accent)}
+.jji-nav-toggle{
+  display:none;width:40px;height:40px;border:1px solid var(--rule);
+  border-radius:4px;font-size:19px;line-height:1;color:var(--ink);
+}
+.jji-search-feedback{
+  font-size:12px;color:var(--accent-dark);min-height:18px;
+  padding:5px 0 0;display:none;
+}
+.jji-search-feedback.jji-show{display:block}
+
+/* ===== 首屏 ===== */
+.jji-hero{padding:62px 0 54px;border-bottom:1px solid var(--rule)}
+.jji-hero-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);
+  gap:56px;align-items:start;
+}
+.jji-hero-kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:12px;letter-spacing:.24em;color:var(--accent);
+  font-weight:700;text-transform:uppercase;margin-bottom:20px;
+}
+.jji-hero-kicker::before{content:"";width:34px;height:2px;background:var(--accent)}
+.jji-hero h1{
+  font-size:clamp(38px,5vw,62px);line-height:1.14;
+  font-weight:800;letter-spacing:.02em;margin-bottom:18px;
+}
+.jji-hero h1 em{
+  font-style:normal;color:var(--accent);position:relative;white-space:nowrap;
+}
+.jji-hero-lead{
+  font-size:16.5px;color:var(--ink-soft);max-width:34em;margin-bottom:26px;
+}
+.jji-hero-lead strong{color:var(--ink);font-weight:700}
+.jji-hero-intro{
+  border-left:3px solid var(--gold);padding:2px 0 2px 18px;
+  font-size:14.5px;color:var(--ink-soft);margin-bottom:30px;
+}
+.jji-hero-intro b{color:var(--ink)}
+.jji-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;background:var(--rule);border:1px solid var(--rule);
+  margin-bottom:30px;border-radius:6px;overflow:hidden;
+}
+.jji-stat{background:#fff;padding:16px 14px}
+.jji-stat-num{
+  font-size:26px;font-weight:800;letter-spacing:.01em;line-height:1.1;
+  color:var(--accent);font-family:Georgia,"Times New Roman",serif;
+}
+.jji-stat-label{font-size:12px;color:var(--ink-soft);margin-top:5px;letter-spacing:.04em}
+.jji-hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.jji-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;font-size:14px;font-weight:600;letter-spacing:.05em;
+  border-radius:3px;transition:transform .18s,background .2s,color .2s,border-color .2s;
+}
+.jji-btn:hover{transform:translateY(-2px)}
+.jji-btn-solid{background:var(--ink);color:var(--paper);border:1px solid var(--ink)}
+.jji-btn-solid:hover{background:var(--accent);border-color:var(--accent)}
+.jji-btn-outline{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.jji-btn-outline:hover{background:var(--ink);color:var(--paper)}
+.jji-hero-visual{position:relative}
+.jji-hero-figure{
+  border:1px solid var(--rule);background:#fff;padding:10px;
+  box-shadow:var(--shadow);border-radius:4px;
+}
+.jji-hero-figure img{width:100%;aspect-ratio:16/11;object-fit:cover;border-radius:2px}
+.jji-hero-caption{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;color:var(--ink-soft);padding:10px 4px 2px;gap:12px;
+}
+.jji-hero-caption b{color:var(--accent);font-weight:700}
+.jji-hero-badge{
+  position:absolute;top:-16px;right:-8px;background:var(--accent);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:.14em;padding:7px 13px;
+  border-radius:2px;transform:rotate(2deg);box-shadow:0 6px 18px rgba(232,69,60,.32);
+}
+.jji-hero-under{
+  margin-top:22px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;font-size:12px;color:var(--ink-soft);
+}
+.jji-hero-under span{
+  display:flex;align-items:center;gap:7px;border-top:1px solid var(--rule);padding-top:9px;
+}
+.jji-hero-under i{
+  width:6px;height:6px;border-radius:50%;background:var(--gold);flex:0 0 auto;
+}
+
+/* ===== 通用区块标题 ===== */
+.jji-section{padding:56px 0}
+.jji-section + .jji-section{border-top:1px solid var(--rule)}
+.jji-sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:24px;margin-bottom:32px;flex-wrap:wrap;
+}
+.jji-sec-tag{
+  font-size:11px;letter-spacing:.3em;color:var(--accent);
+  font-weight:700;text-transform:uppercase;margin-bottom:8px;display:block;
+}
+.jji-sec-head h2{
+  font-size:clamp(24px,3vw,32px);line-height:1.3;font-weight:800;letter-spacing:.02em;
+}
+.jji-sec-desc{font-size:14px;color:var(--ink-soft);max-width:34em}
+.jji-sec-more{
+  font-size:13px;color:var(--ink-soft);border-bottom:1px solid var(--rule);
+  padding-bottom:2px;transition:color .2s,border-color .2s;white-space:nowrap;
+}
+.jji-sec-more:hover{color:var(--accent);border-color:var(--accent)}
+
+/* ===== 深度解析 ===== */
+.jji-analysis{padding:56px 0}
+.jji-analysis-inner{
+  display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px;align-items:start;
+}
+.jji-analysis h2{margin-bottom:18px}
+.jji-analysis p{font-size:15px;color:var(--ink-soft);margin-bottom:16px}
+.jji-analysis p b{color:var(--ink)}
+.jji-analysis h3{
+  font-size:18px;font-weight:700;margin:26px 0 10px;letter-spacing:.01em;
+  padding-left:13px;border-left:3px solid var(--accent);line-height:1.4;
+}
+.jji-analysis-aside{
+  background:#fff;border:1px solid var(--rule);border-radius:4px;
+  padding:24px;box-shadow:var(--shadow);
+}
+.jji-analysis-aside h3{
+  font-size:16px;margin-bottom:14px;letter-spacing:.04em;
+  border-bottom:1px solid var(--rule);padding-bottom:10px;
+}
+.jji-analysis-aside li{
+  display:flex;gap:10px;font-size:13.5px;color:var(--ink-soft);
+  padding:9px 0;border-bottom:1px dashed var(--rule);
+}
+.jji-analysis-aside li:last-child{border-bottom:none}
+.jji-analysis-aside li span{
+  flex:0 0 auto;width:22px;height:22px;border-radius:50%;
+  background:var(--paper);border:1px solid var(--rule);
+  display:grid;place-items:center;font-size:11px;color:var(--accent);font-weight:700;
+}
+
+/* ===== 热点榜单 ===== */
+.jji-hot-grid{
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);
+  gap:36px;align-items:start;
+}
+.jji-feature-card{
+  background:#fff;border:1px solid var(--rule);border-radius:4px;
+  overflow:hidden;box-shadow:var(--shadow);
+}
+.jji-feature-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.jji-feature-body{padding:22px 24px 24px}
+.jji-feature-meta{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:12px;color:var(--ink-soft);margin-bottom:10px;
+}
+.jji-pill{
+  background:var(--paper);border:1px solid var(--rule);border-radius:999px;
+  padding:2px 10px;font-size:11px;color:var(--accent-dark);letter-spacing:.03em;
+}
+.jji-feature-body h3{font-size:21px;line-height:1.45;margin-bottom:10px;font-weight:800}
+.jji-feature-body p{font-size:14px;color:var(--ink-soft);margin-bottom:16px}
+.jji-act-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.jji-act{
+  display:inline-flex;align-items:center;gap:5px;font-size:12.5px;
+  color:var(--ink-soft);transition:color .2s;padding:3px 0;
+}
+.jji-act:hover{color:var(--accent)}
+.jji-act.jji-liked{color:var(--accent);font-weight:700}
+.jji-act.jji-saved{color:var(--gold);font-weight:700}
+.jji-act svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2}
+.jji-act.jji-liked svg,.jji-act.jji-saved svg{fill:currentColor}
+.jji-hot-list{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+.jji-hot-item{
+  display:flex;gap:16px;padding:17px 0;border-bottom:1px solid var(--rule);
+  align-items:flex-start;transition:transform .18s;
+}
+.jji-hot-item:hover{transform:translateX(4px)}
+.jji-hot-rank{
+  flex:0 0 auto;font-family:Georgia,serif;font-size:24px;font-weight:700;
+  color:var(--rule);line-height:1;width:38px;
+}
+.jji-hot-item:nth-child(1) .jji-hot-rank{color:var(--accent)}
+.jji-hot-item:nth-child(2) .jji-hot-rank{color:var(--gold)}
+.jji-hot-item:nth-child(3) .jji-hot-rank{color:var(--ink-soft)}
+.jji-hot-content{flex:1 1 auto;min-width:0}
+.jji-hot-content h3{font-size:15.5px;line-height:1.5;margin-bottom:4px;font-weight:700}
+.jji-hot-content p{font-size:12.5px;color:var(--ink-soft);margin-bottom:7px}
+.jji-hot-foot{
+  display:flex;gap:14px;font-size:11.5px;color:#9a948a;flex-wrap:wrap;align-items:center;
+}
+.jji-hot-foot .jji-act{font-size:11.5px}
+
+/* ===== 专题企划 ===== */
+.jji-topics-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;
+}
+.jji-topic-card{
+  background:#fff;border:1px solid var(--rule);border-radius:4px;
+  padding:24px;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s;
+}
+.jji-topic-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.jji-topic-status{
+  display:inline-flex;align-items:center;gap:6px;font-size:11px;
+  letter-spacing:.1em;color:var(--accent);font-weight:700;margin-bottom:12px;
+}
+.jji-topic-status i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block}
+.jji-topic-card h3{font-size:18px;line-height:1.45;margin-bottom:8px;font-weight:800}
+.jji-topic-card > p{font-size:13px;color:var(--ink-soft);margin-bottom:16px;flex:1 1 auto}
+.jji-topic-items{border-top:1px solid var(--rule);padding-top:12px}
+.jji-topic-items li{
+  font-size:12.5px;color:var(--ink-soft);padding:6px 0 6px 14px;
+  position:relative;line-height:1.5;
+}
+.jji-topic-items li::before{
+  content:"—";position:absolute;left:0;color:var(--gold);
+}
+
+/* ===== 创作者矩阵 ===== */
+.jji-author-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:4px;overflow:hidden;
+}
+.jji-author-card{
+  background:#fff;padding:26px 26px 22px;display:flex;gap:18px;
+  transition:background .2s;
+}
+.jji-author-card:hover{background:#fdfbf7}
+.jji-avatar{
+  flex:0 0 auto;width:60px;height:60px;border-radius:50%;
+  display:grid;place-items:center;font-size:22px;font-weight:800;
+  color:#fff;letter-spacing:0;font-family:"Noto Serif SC",serif;
+}
+.jji-author-body{flex:1 1 auto;min-width:0}
+.jji-author-body h3{font-size:17px;font-weight:800;margin-bottom:2px}
+.jji-author-field{font-size:12px;color:var(--accent);letter-spacing:.05em;margin-bottom:8px}
+.jji-author-body p{font-size:13px;color:var(--ink-soft);line-height:1.65;margin-bottom:10px}
+.jji-author-nums{display:flex;gap:16px;font-size:11.5px;color:#928c82;flex-wrap:wrap}
+.jji-author-nums b{color:var(--ink);font-weight:700;font-size:13px}
+.jji-author-more{
+  margin-top:10px;font-size:12px;color:var(--accent-dark);
+  border-bottom:1px dashed var(--accent-dark);display:inline-block;padding-bottom:1px;
+}
+
+/* ===== 图文索引 ===== */
+.jji-index-list{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+.jji-index-item{
+  display:grid;grid-template-columns:150px minmax(0,1fr) auto;
+  gap:22px;padding:22px 0;border-bottom:1px solid var(--rule);align-items:center;
+}
+.jji-index-item img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:3px;border:1px solid var(--rule)}
+.jji-index-item h3{font-size:16.5px;line-height:1.5;font-weight:700;margin-bottom:6px}
+.jji-index-item p{font-size:13px;color:var(--ink-soft);margin-bottom:8px}
+.jji-index-tags{display:flex;gap:8px;flex-wrap:wrap}
+.jji-index-tags span{
+  font-size:11px;color:var(--ink-soft);background:var(--paper);
+  border:1px solid var(--rule);border-radius:2px;padding:1px 8px;
+}
+.jji-index-num{
+  font-family:Georgia,serif;font-size:34px;color:var(--rule);font-weight:700;line-height:1;
+}
+
+/* ===== 用户评价 ===== */
+.jji-quotes-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;
+}
+.jji-quote{
+  background:#fff;border:1px solid var(--rule);border-radius:4px;
+  padding:24px 24px 20px;position:relative;
+}
+.jji-quote::before{
+  content:"“";font-family:Georgia,serif;font-size:58px;line-height:.7;
+  color:var(--gold);opacity:.4;position:absolute;top:6px;right:18px;
+}
+.jji-quote p{font-size:14px;color:var(--ink-soft);line-height:1.75;margin-bottom:16px;position:relative}
+.jji-quote-foot{display:flex;align-items:center;gap:10px;font-size:12px;color:#928c82}
+.jji-quote-avatar{
+  width:30px;height:30px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;flex:0 0 auto;
+}
+.jji-quote-foot b{color:var(--ink);font-weight:700}
+.jji-stars{color:var(--gold);letter-spacing:2px;font-size:12px;margin-left:auto}
+
+/* ===== FAQ ===== */
+.jji-faq-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:44px;align-items:start}
+.jji-faq-intro h2{margin-bottom:16px}
+.jji-faq-intro p{font-size:14px;color:var(--ink-soft);margin-bottom:18px}
+.jji-faq-contact{
+  background:#fff;border:1px solid var(--rule);border-radius:4px;padding:20px;
+  font-size:13px;color:var(--ink-soft);
+}
+.jji-faq-contact b{display:block;color:var(--ink);font-size:14px;margin-bottom:6px}
+.jji-faq-contact button{
+  margin-top:12px;font-size:13px;color:#fff;background:var(--ink);
+  padding:8px 18px;border-radius:3px;transition:background .2s;
+}
+.jji-faq-contact button:hover{background:var(--accent)}
+.jji-faq-list details{
+  border-bottom:1px solid var(--rule);padding:0;
+}
+.jji-faq-list summary{
+  list-style:none;cursor:pointer;padding:17px 34px 17px 0;position:relative;
+  font-size:15px;font-weight:700;line-height:1.55;transition:color .2s;
+}
+.jji-faq-list summary::-webkit-details-marker{display:none}
+.jji-faq-list summary::after{
+  content:"+";position:absolute;right:0;top:14px;font-size:20px;
+  color:var(--accent);font-weight:400;transition:transform .2s;
+}
+.jji-faq-list details[open] summary::after{content:"–"}
+.jji-faq-list summary:hover{color:var(--accent)}
+.jji-faq-list .jji-faq-a{
+  font-size:13.5px;color:var(--ink-soft);line-height:1.8;
+  padding:0 0 20px;margin-top:-4px;
+}
+
+/* ===== 企业动态 & 合作 ===== */
+.jji-two-col{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:44px;align-items:start}
+.jji-feed li{
+  display:grid;grid-template-columns:auto 1fr;gap:16px;
+  padding:15px 0;border-bottom:1px solid var(--rule);align-items:start;
+}
+.jji-feed time{
+  font-family:Georgia,serif;font-size:13px;color:var(--accent-dark);
+  letter-spacing:.02em;white-space:nowrap;padding-top:1px;
+}
+.jji-feed h3{font-size:15px;font-weight:700;line-height:1.5;margin-bottom:3px}
+.jji-feed p{font-size:12.5px;color:var(--ink-soft)}
+.jji-partners{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;
+}
+.jji-partner{
+  border:1px solid var(--rule);border-radius:3px;padding:16px 14px;
+  font-size:13px;font-weight:700;letter-spacing:.06em;text-align:center;
+  background:#fff;color:var(--ink-soft);transition:color .2s,border-color .2s;
+}
+.jji-partner:hover{color:var(--accent);border-color:var(--accent)}
+
+/* ===== 页脚 ===== */
+.jji-footer{background:var(--ink);color:#cfc8bb;padding:52px 0 0;margin-top:12px}
+.jji-footer-grid{
+  display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));
+  gap:40px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.13);
+}
+.jji-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+.jji-footer-brand .jji-brand-mark{border-color:#fbf7f0}
+.jji-footer-brand .jji-brand-name{color:#fbf7f0;font-size:19px}
+.jji-footer-brand .jji-brand-name small{color:#928c82}
+.jji-footer p{font-size:13px;line-height:1.8;color:#a49e92;max-width:30em}
+.jji-footer h3{
+  font-size:13px;letter-spacing:.18em;color:#fbf7f0;margin-bottom:14px;font-weight:700;
+}
+.jji-footer li{font-size:13px;margin-bottom:9px;color:#a49e92}
+.jji-footer li a:hover{color:var(--accent)}
+.jji-footer-bottom{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding:20px 0 26px;font-size:12px;color:#8a847a;
+}
+.jji-footer-bottom span{line-height:1.8}
+
+/* ===== 回到顶部 ===== */
+.jji-top-btn{
+  position:fixed;right:24px;bottom:26px;width:46px;height:46px;
+  border-radius:50%;background:var(--ink);color:var(--paper);
+  display:grid;place-items:center;font-size:17px;z-index:90;
+  opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:opacity .25s,transform .25s,background .2s;box-shadow:0 8px 24px rgba(24,23,22,.28);
+}
+.jji-top-btn.jji-show{opacity:1;visibility:visible;transform:translateY(0)}
+.jji-top-btn:hover{background:var(--accent)}
+
+/* ===== Toast / Modal ===== */
+.jji-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,16px);
+  background:var(--ink);color:var(--paper);font-size:13px;
+  padding:11px 22px;border-radius:3px;z-index:200;
+  opacity:0;visibility:hidden;transition:opacity .25s,transform .25s;
+  max-width:calc(100% - 40px);text-align:center;
+}
+.jji-toast.jji-show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.jji-modal-mask{
+  position:fixed;inset:0;background:rgba(24,23,22,.5);z-index:180;
+  display:none;align-items:center;justify-content:center;padding:24px;
+  backdrop-filter:blur(2px);
+}
+.jji-modal-mask.jji-open{display:flex}
+.jji-modal{
+  background:var(--paper);border-radius:5px;max-width:480px;width:100%;
+  padding:30px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.3);
+  max-height:84vh;overflow:auto;
+}
+.jji-modal h3{font-size:19px;font-weight:800;margin-bottom:14px;padding-right:22px}
+.jji-modal p{font-size:13.5px;color:var(--ink-soft);line-height:1.8;margin-bottom:14px}
+.jji-modal label{font-size:12.5px;color:var(--ink-soft);display:block;margin:12px 0 5px}
+.jji-modal input,.jji-modal textarea{
+  width:100%;border:1px solid var(--rule);border-radius:3px;background:#fff;
+  padding:9px 11px;font-family:inherit;font-size:13px;outline:none;color:var(--ink);
+}
+.jji-modal input:focus,.jji-modal textarea:focus{border-color:var(--accent)}
+.jji-modal-actions{display:flex;gap:10px;margin-top:18px}
+.jji-modal-actions button{
+  flex:1;padding:10px;border-radius:3px;font-size:13.5px;font-weight:600;
+}
+.jji-modal-ok{background:var(--ink);color:var(--paper)}
+.jji-modal-ok:hover{background:var(--accent)}
+.jji-modal-cancel{background:#fff;border:1px solid var(--rule);color:var(--ink-soft)}
+.jji-modal-close{
+  position:absolute;top:14px;right:16px;font-size:20px;line-height:1;color:var(--ink-soft);
+}
+.jji-modal-close:hover{color:var(--accent)}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .jji-hero-grid{grid-template-columns:1fr;gap:38px}
+  .jji-analysis-inner{grid-template-columns:1fr;gap:34px}
+  .jji-hot-grid{grid-template-columns:1fr;gap:34px}
+  .jji-topics-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jji-two-col{grid-template-columns:1fr;gap:34px}
+  .jji-faq-wrap{grid-template-columns:1fr;gap:30px}
+  .jji-footer-grid{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media (max-width:820px){
+  .jji-header-inner{flex-wrap:wrap;padding:12px 0}
+  .jji-nav{
+    display:none;order:4;flex-basis:100%;flex-direction:column;
+    align-items:flex-start;gap:0;padding-top:10px;border-top:1px solid var(--rule);
+  }
+  .jji-nav.jji-nav-open{display:flex}
+  .jji-nav a{width:100%;padding:11px 0;border-bottom:1px dashed var(--rule)}
+  .jji-nav-toggle{display:block}
+  .jji-search input{width:108px}
+  .jji-author-grid{grid-template-columns:1fr}
+  .jji-quotes-grid{grid-template-columns:1fr}
+  .jji-index-item{grid-template-columns:110px minmax(0,1fr)}
+  .jji-index-num{display:none}
+  .jji-topics-grid{grid-template-columns:1fr}
+  .jji-hero-stats{grid-template-columns:1fr 1fr 1fr}
+}
+@media (max-width:560px){
+  .jji-wrap{width:calc(100% - 32px)}
+  .jji-hero{padding:40px 0 40px}
+  .jji-hero-stats{grid-template-columns:1fr;gap:1px}
+  .jji-stat{padding:13px 16px;display:flex;align-items:baseline;gap:12px}
+  .jji-stat-label{margin-top:0}
+  .jji-hero-under{grid-template-columns:1fr}
+  .jji-section{padding:42px 0}
+  .jji-author-card{flex-direction:column;gap:12px}
+  .jji-avatar{width:52px;height:52px;font-size:19px}
+  .jji-index-item{grid-template-columns:1fr;gap:12px}
+  .jji-index-item img{aspect-ratio:16/9}
+  .jji-footer-grid{grid-template-columns:1fr}
+  .jji-announce-text{font-size:12px}
+  .jji-announce-more{display:none}
+  .jji-modal{padding:24px 20px}
+  .jji-btn{padding:11px 18px;font-size:13px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶：公告条 + 页头 ===== -->
+<div class="jji-sticky-top">
+  <div class="jji-announce">
+    <div class="jji-wrap">
+      <span class="jji-announce-tag">最新动态</span>
+      <span class="jji-announce-text"><b>《真相回响》第三季正式上线</b>，首期聚焦城市更新中的普通人；本周新增 6 条深度影像与 2 场创作者直播对谈。</span>
+      <a class="jji-announce-more" href="#jji-feed">查看全部 →</a>
+    </div>
+  </div>
+
+  <header class="jji-header">
+    <div class="jji-wrap jji-header-inner">
+      <a class="jji-brand" href="#jji-top">
+        <span class="jji-brand-mark" aria-hidden="true"></span>
+        <span class="jji-brand-name">久久黑料<small>JIUJIU DEEP</small></span>
+      </a>
+      <nav class="jji-nav" id="jjiNav" aria-label="主导航">
+        <a href="#jji-analysis">品牌解析</a>
+        <a href="#jji-hot">热点榜单</a>
+        <a href="#jji-topics">专题企划</a>
+        <a href="#jji-authors">创作者</a>
+        <a href="#jji-voices">用户评价</a>
+        <a href="#jji-faq">帮助中心</a>
+      </nav>
+      <div class="jji-header-tools">
+        <div class="jji-search" role="search">
+          <input type="search" id="jjiSearchInput" placeholder="搜索深度内容、创作者" aria-label="搜索站内内容">
+          <button type="button" id="jjiSearchBtn" aria-label="提交搜索">⌕</button>
+        </div>
+        <button class="jji-nav-toggle" id="jjiNavToggle" aria-label="展开菜单" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="jji-wrap">
+      <div class="jji-search-feedback" id="jjiSearchFeedback" role="status"></div>
+    </div>
+  </header>
+</div>
+
+<!-- ===== 首屏 ===== -->
+<main id="jji-top">
+  <section class="jji-hero" aria-labelledby="jjiHeroTitle">
+    <div class="jji-wrap jji-hero-grid">
+      <div>
+        <span class="jji-hero-kicker">官方网站 · 原创深度视频品牌</span>
+        <h1 id="jjiHeroTitle">久久黑料<br><em>把真相讲给你听</em></h1>
+        <p class="jji-hero-lead">久久黑料是<strong>专注深度观察与真相追踪的原创视频品牌</strong>。我们以专业影像与严谨叙事，记录事件背后的人与细节，让复杂的信息变得可理解、可讨论、可留存。</p>
+        <div class="jji-hero-intro">
+          <b>品牌简介：</b>久久黑料企业创立以来深耕深度视频领域，坚持原创与正版内容，搭建从选题、调研、拍摄到发布的完整内容生态。平台聚合调查记者、纪录片创作者与多元领域观察者，以高清影像和真实故事构建值得信赖的社区氛围，让每一次观看都更接近事实本身。
+        </div>
+        <div class="jji-hero-stats" aria-label="品牌核心数据">
+          <div class="jji-stat">
+            <div class="jji-stat-num">1280<span>+</span></div>
+            <div class="jji-stat-label">原创深度影像作品</div>
+          </div>
+          <div class="jji-stat">
+            <div class="jji-stat-num">96<span>%</span></div>
+            <div class="jji-stat-label">用户内容满意度</div>
+          </div>
+          <div class="jji-stat">
+            <div class="jji-stat-num">340<span>万</span></div>
+            <div class="jji-stat-label">社区创作者与关注者</div>
+          </div>
+        </div>
+        <div class="jji-hero-actions">
+          <a class="jji-btn jji-btn-solid" href="#jji-hot">浏览热点榜单</a>
+          <a class="jji-btn jji-btn-outline" href="#jji-authors">认识创作者</a>
+          <button class="jji-btn jji-btn-outline" type="button" id="jjiSubmitBtn">投稿 / 提供线索</button>
+        </div>
+      </div>
+
+      <div class="jji-hero-visual">
+        <span class="jji-hero-badge">本周焦点 · 4K 高清</span>
+        <figure class="jji-hero-figure">
+          <img alt="久久黑料《真相回响》第三季首期主视觉，城市街角灯光与人群剪影" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='550' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23181716'/%3E%3Cstop offset='1' stop-color='%232c2926'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23e8453c'/%3E%3Cstop offset='1' stop-color='%23a82820'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23g1)'/%3E%3Ccircle cx='565' cy='150' r='92' fill='%23e8453c' opacity='.9'/%3E%3Ccircle cx='565' cy='150' r='150' fill='none' stroke='%23c8a15a' stroke-width='2' opacity='.55'/%3E%3Cpath d='M0 430 L120 360 L230 400 L340 320 L460 385 L580 300 L720 370 L800 330 L800 550 L0 550 Z' fill='%23100f0e'/%3E%3Cpath d='M0 470 L110 420 L240 455 L360 395 L500 445 L650 380 L800 430 L800 550 L0 550 Z' fill='%230a0a09'/%3E%3Cg stroke='%23fbf7f0' stroke-width='2' opacity='.6'%3E%3Cpath d='M120 470 v-70'/%3E%3Cpath d='M120 400 l22 22'/%3E%3Cpath d='M120 400 l-22 22'/%3E%3C/g%3E%3Crect x='52' y='60' width='180' height='6' fill='%23c8a15a'/%3E%3Crect x='52' y='80' width='120' height='6' fill='%23fbf7f0' opacity='.5'/%3E%3Cg opacity='.85'%3E%3Crect x='540' y='420' width='14' height='62' fill='%23e8453c'/%3E%3Crect x='566' y='392' width='14' height='90' fill='%23c8a15a'/%3E%3Crect x='592' y='440' width='14' height='42' fill='%23fbf7f0' opacity='.7'/%3E%3C/g%3E%3C/svg%3E">
+          <figcaption class="jji-hero-caption">
+            <span>《真相回响》第三季 · 首期上线</span>
+            <b>▶ 12.6万 次观看</b>
+          </figcaption>
+        </figure>
+        <div class="jji-hero-under">
+          <span><i></i>原创纪录团队实地跟拍</span>
+          <span><i></i>正版高清 · 多端同步</span>
+          <span><i></i>社区共评 · 观点多元</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 关键词深度解析 ===== -->
+  <section class="jji-analysis" id="jji-analysis" aria-labelledby="jjiAnalysisTitle">
+    <div class="jji-wrap jji-analysis-inner">
+      <div>
+        <span class="jji-sec-tag">Brand Insight</span>
+        <h2 id="jjiAnalysisTitle">久久黑料是什么？一份关于深度视频品牌的完整解析</h2>
+        <p>在信息过载的当下，「久久黑料」这个名称常被误解。作为一家持续运营的深度视频品牌与企业，我们希望用清晰的方式解释自己的定位：<b>久久黑料官方网站</b>不是简单的内容聚合页，而是一个以原创调查、人物纪实与行业观察为核心的视频内容生态。</p>
+        <h3>一、名称背后的立场：久、久、黑、料</h3>
+        <p>「久久」代表持续与长期主义。深度内容无法速成，一个选题从线索收集到成片发布，往往需要三到六周，部分复杂议题甚至跨越数月。我们坚持长期跟踪，让事件的全貌在时间里逐渐显现。而「黑料」在这里指的并非猎奇或八卦，而是那些尚未被充分看见、隐藏在表层之下的信息线索与真实细节。我们把「黑料」理解为<b>需要被认真对待的复杂信息</b>，用专业方式拆解、求证，并最终以影像呈现。</p>
+        <h3>二、内容方法论：从线索到成片的四道工序</h3>
+        <p>第一道是线索筛选。团队每周会收到来自社区与创作者的上百条线索，我们依据公共价值、可验证性与叙事空间进行初筛。第二道是实地调研，记者与拍摄团队进入现场，完成人物访谈与场景记录，必要时交叉验证多方说法。第三道是剪辑与事实核查，每一个关键信息点在成片前都会经过复核，并在画面中标注信息来源。第四道是社区反馈，视频发布后我们保留开放讨论区，创作者会在直播与文字回应中补充说明，形成内容与观众之间的双向校正。</p>
+        <h3>三、内容矩阵与观看体验</h3>
+        <p>目前久久黑料形成了三条稳定的内容线：其一是长纪录片《真相回响》，聚焦城市、产业与个体命运；其二是轻量栏目《三分钟观察》，用短影像回应热点议题；其三是创作者共创计划，邀请不同领域的作者以第一视角记录所见。平台所有内容均提供高清版本，支持收藏与评论互动，并保留完整的作者署名与版权信息。我们相信，<b>品质与口碑</b>来自对每一个细节的尊重，也来自社区对中国原创深度内容的共同守护。</p>
+        <p>对观众而言，久久黑料希望提供的是一种「慢一点」的观看体验：不追逐情绪，不放大对立，而是让事实本身拥有力量。对企业与合作伙伴而言，我们开放内容共创、品牌纪录片与行业观察定制服务，以专业影像能力服务更广泛的社会议题表达。这正是久久黑料作为视频品牌官网长期坚持的方向。</p>
+      </div>
+      <aside class="jji-analysis-aside">
+        <h3>品牌关键词速览</h3>
+        <ul>
+          <li><span>01</span>官方网站 · 原创深度视频内容平台</li>
+          <li><span>02</span>持续运营 · 每周固定更新节奏</li>
+          <li><span>03</span>创作者社区 · 340万关注者共同参与</li>
+          <li><span>04</span>正版高清 · 完整版权与署名体系</li>
+          <li><span>05</span>企业级内容合作 · 品牌纪录片与行业观察</li>
+          <li><span>06</span>用户至上 · 开放讨论与事实核查并行</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== 热点榜单 ===== -->
+  <section class="jji-section" id="jji-hot" aria-labelledby="jjiHotTitle">
+    <div class="jji-wrap">
+      <div class="jji-sec-head">
+        <div>
+          <span class="jji-sec-tag">Hot List</span>
+          <h2 id="jjiHotTitle">久久黑料热点榜单：本周值得观看的深度内容</h2>
+          <p class="jji-sec-desc">依据播放、收藏、讨论热度综合排序，每周五更新。榜单为社区观察提供入口，不构成对事件结论的判定。</p>
+        </div>
+        <a class="jji-sec-more" href="#jji-topics">查看全部专题 →</a>
+      </div>
+
+      <div class="jji-hot-grid">
+        <article class="jji-feature-card">
+          <img alt="《凌晨四点的批发市场》纪录片封面，市场灯光下的忙碌身影" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='820' height='460' viewBox='0 0 820 460'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f2c14e'/%3E%3Cstop offset='1' stop-color='%23e8453c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='820' height='460' fill='%231f1a14'/%3E%3Crect y='300' width='820' height='160' fill='%232b231b'/%3E%3Cg%3E%3Crect x='60' y='110' width='230' height='190' rx='4' fill='%23f2c14e' opacity='.22'/%3E%3Crect x='70' y='120' width='210' height='170' rx='3' fill='none' stroke='%23f2c14e' stroke-width='2'/%3E%3Ccircle cx='175' cy='205' r='52' fill='url(%23a1)'/%3E%3C/g%3E%3Cg stroke='%23f2c14e' stroke-width='3' opacity='.8'%3E%3Cpath d='M360 300 v-100'/%3E%3Cpath d='M360 200 h150'/%3E%3Cpath d='M510 200 v100'/%3E%3C/g%3E%3Cg fill='%23fbf7f0' opacity='.85'%3E%3Crect x='380' y='330' width='42' height='58' rx='3'/%3E%3Crect x='436' y='352' width='30' height='36' rx='3'/%3E%3Crect x='478' y='318' width='36' height='70' rx='3'/%3E%3C/g%3E%3Cg fill='%23e8453c' opacity='.75'%3E%3Crect x='620' y='250' width='130' height='120' rx='4'/%3E%3Crect x='640' y='270' width='90' height='80' rx='2' fill='%231f1a14' opacity='.4'/%3E%3C/g%3E%3C/svg%3E">
+          <div class="jji-feature-body">
+            <div class="jji-feature-meta">
+              <span class="jji-pill">焦点推荐</span>
+              <span>真相回响 · 第 12 期</span>
+              <span>·</span>
+              <span>林深工作室</span>
+            </div>
+            <h3>凌晨四点的批发市场：一座城市的另一种作息</h3>
+            <p>团队连续七天跟拍凌晨市场，记录摊主、搬运工与采购商在夜色与晨光之间的真实状态。没有旁白渲染，只有现场声音与人物自述。</p>
+            <div class="jji-act-row">
+              <button class="jji-act jji-like-btn" type="button" data-like="12800">♥ 1.28万</button>
+              <button class="jji-act jji-save-btn" type="button" data-save="3400">☆ 收藏 3400</button>
+              <button class="jji-act jji-copy-btn" type="button" data-copy="《凌晨四点的批发市场》· 久久黑料">⧉ 复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="jji-hot-list">
+          <article class="jji-hot-item">
+            <span class="jji-hot-rank">01</span>
+            <div class="jji-hot-content">
+              <h3>消失的街角书店，与坚持了十四年的老板</h3>
+              <p>城市更新中的小店命运，一次安静而克制的记录。</p>
+              <div class="jji-hot-foot">
+                <span>纪实 · 18:42</span>
+                <button class="jji-act jji-like-btn" type="button" data-like="9640">♥ 9640</button>
+                <button class="jji-act jji-save-btn" type="button" data-save="2110">☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="jji-hot-item">
+            <span class="jji-hot-rank">02</span>
+            <div class="jji-hot-content">
+              <h3>工厂流水线上的年轻人：三班倒之外的愿望</h3>
+              <p>跟拍四位年轻工人，听见他们对未来的具体设想。</p>
+              <div class="jji-hot-foot">
+                <span>人物 · 22:10</span>
+                <button class="jji-act jji-like-btn" type="button" data-like="8210">♥ 8210</button>
+                <button class="jji-act jji-save-btn" type="button" data-save="1780">☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="jji-hot-item">
+            <span class="jji-hot-rank">03</span>
+            <div class="jji-hot-content">
+              <h3>三分钟观察：一条网传视频的十二小时核查</h3>
+              <p>从截图溯源到现场比对，完整展示事实核查流程。</p>
+              <div class="jji-hot-foot">
+                <span>观察 · 03:26</span>
+                <button class="jji-act jji-like-btn" type="button" data-like="7450">♥ 7450</button>
+                <button class="jji-act jji-save-btn" type="button" data-save="1520">☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="jji-hot-item">
+            <span class="jji-hot-rank">04</span>
+            <div class="jji-hot-content">
+              <h3>社区菜场的数字化改造，摊主们怎么看</h3>
+              <p>技术进入日常生活的真实摩擦与适应过程。</p>
+              <div class="jji-hot-foot">
+                <span>行业 · 15:08</span>
+                <button class="jji-act jji-like-btn" type="button" data-like="6120">♥ 6120</button>
+                <button class="jji-act jji-save-btn" type="button" data-save="1340">☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="jji-hot-item">
+            <span class="jji-hot-rank">05</span>
+            <div class="jji-hot-content">
+              <h3>夜班公交司机的十年：城市深夜的固定坐标</h3>
+              <p>一条线路、一张面孔，与无数陌生乘客的交集。</p>
+              <div class="jji-hot-foot">
+                <span>人物 · 20:34</span>
+                <button class="jji-act jji-like-btn" type="button" data-like="5380">♥ 5380</button>
+                <button class="jji-act jji-save-btn" type="button" data-save="960">☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 专题企划 ===== -->
+  <section class="jji-section" id="jji-topics" aria-labelledby="jjiTopicsTitle">
+    <div class="jji-wrap">
+      <div class="jji-sec-head">
+        <div>
+          <span class="jji-sec-tag">Series</span>
+          <h2 id="jjiTopicsTitle">专题企划：用系列影像回应当下议题</h2>
+          <p class="jji-sec-desc">每个专题由主编团队策划，联合多位创作者持续更新，目前已形成三条稳定内容线。</p>
+        </div>
+      </div>
+      <div class="jji-topics-grid">
+        <article class="jji-topic-card">
+          <span class="jji-topic-status"><i></i>更新中 · 每周三</span>
+          <h3>真相回响</h3>
+          <p>以长纪录片形式追踪城市、产业与个体命运的交汇点，强调实地记录与多方声音。</p>
+          <ul class="jji-topic-items">
+            <li>凌晨四点的批发市场 · 已上线</li>
+            <li>消失的街角书店 · 已上线</li>
+            <li>港口集装箱背后的人 · 制作中</li>
+          </ul>
+        </article>
+        <article class="jji-topic-card">
+          <span class="jji-topic-status"><i></i>更新中 · 隔周</span>
+          <h3>三分钟观察</h3>
+          <p>用轻量影像回应热点，以核查过程与事实梳理为核心，帮助观众建立判断框架。</p>
+          <ul class="jji-topic-items">
+            <li>一条网传视频的十二小时核查</li>
+            <li>数据图背后的三个常见误读</li>
+            <li>如何识别剪辑误导 · 制作中</li>
+          </ul>
+        </article>
+        <article class="jji-topic-card">
+          <span class="jji-topic-status"><i></i>长期开放 · 征集</span>
+          <h3>创作者共创计划</h3>
+          <p>面向独立创作者开放选题与制作支持，提供拍摄指导、剪辑协作与官方发布渠道。</p>
+          <ul class="jji-topic-items">
+            <li>第一期：小城青年影像征集</li>
+            <li>第二期：手艺人的一天</li>
+            <li>第三期：社区记忆档案 · 报名中</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 创作者矩阵 ===== -->
+  <section class="jji-section" id="jji-authors" aria-labelledby="jjiAuthorsTitle">
+    <div class="jji-wrap">
+      <div class="jji-sec-head">
+        <div>
+          <span class="jji-sec-tag">Creators</span>
+          <h2 id="jjiAuthorsTitle">久久黑料创作者矩阵：值得长期关注的深度作者</h2>
+          <p class="jji-sec-desc">他们来自调查报道、纪录片、社会学与视觉叙事等不同领域，共同构成平台的内容生态。</p>
+        </div>
+      </div>
+      <div class="jji-author-grid">
+        <article class="jji-author-card">
+          <div class="jji-avatar" style="background:#e8453c">林</div>
+          <div class="jji-author-body">
+            <h3>林深</h3>
+            <div class="jji-author-field">深度调查 · 城市议题</div>
+            <p>前报纸调查记者，擅长从细碎线索中还原事件结构。长期关注城市更新与基层生活，拍摄时坚持长时间驻留与回访，作品以克制、完整著称。</p>
+            <div class="jji-author-nums"><span>作品 <b>86</b></span><span>关注者 <b>42.6万</b></span></div>
+            <button class="jji-author-more jji-author-open" type="button" data-name="林深" data-field="深度调查 · 城市议题" data-desc="前报纸调查记者，曾参与多项城市与产业议题报道。加入久久黑料后主导《真相回响》系列，坚持长期驻留式拍摄，认为纪录片的耐心本身就是一种立场。">查看作者简介 →</button>
+          </div>
+        </article>
+        <article class="jji-author-card">
+          <div class="jji-avatar" style="background:#c8a15a">周</div>
+          <div class="jji-author-body">
+            <h3>周与岸</h3>
+            <div class="jji-author-field">人物访谈 · 行业观察</div>
+            <p>访谈类创作者，提问温和但追问到底。关注制造业、服务业从业者的职业选择与生活期待，擅长用对话节奏呈现复杂处境。</p>
+            <div class="jji-author-nums"><span>作品 <b>64</b></span><span>关注者 <b>31.2万</b></span></div>
+            <button class="jji-author-more jji-author-open" type="button" data-name="周与岸" data-field="人物访谈 · 行业观察" data-desc="长期从事人物访谈与行业观察，主张让受访者自己把话说完。在久久黑料负责多档访谈栏目，并参与创作者共创计划的选题辅导。">查看作者简介 →</button>
+          </div>
+        </article>
+        <article class="jji-author-card">
+          <div class="jji-avatar" style="background:#2f5d50">阿禾</div>
+          <div class="jji-author-body">
+            <h3>阿禾</h3>
+            <div class="jji-author-field">社会观察 · 数据可视化</div>
+            <p>社会学背景，善于把抽象数据转译为可感知的影像语言。在《三分钟观察》中负责事实核查与图表设计，强调信息可溯源。</p>
+            <div class="jji-author-nums"><span>作品 <b>58</b></span><span>关注者 <b>27.9万</b></span></div>
+            <button class="jji-author-more jji-author-open" type="button" data-name="阿禾" data-field="社会观察 · 数据可视化" data-desc="关注信息如何被生产与传播，擅长以数据可视化和现场比对解释复杂议题。坚持每条信息标注来源，是平台事实核查流程的主要设计者之一。">查看作者简介 →</button>
+          </div>
+        </article>
+        <article class="jji-author-card">
+          <div class="jji-avatar" style="background:#6b5b8e">陈默</div>
+          <div class="jji-author-body">
+            <h3>陈默</h3>
+            <div class="jji-author-field">视觉叙事 · 纪实摄影</div>
+            <p>纪录片摄影师出身，习惯用长镜头等待真实发生。负责多个系列的影像统筹，主张画面服务于人物而不是情绪。</p>
+            <div class="jji-author-nums"><span>作品 <b>47</b></span><span>关注者 <b>19.4万</b></span></div>
+            <button class="jji-author-more jji-author-open" type="button" data-name="陈默" data-field="视觉叙事 · 纪实摄影" data-desc="十年纪实摄影经验，参与《真相回响》多期拍摄。相信镜头与被拍摄者之间需要建立信任，反对摆拍与过度调度。">查看作者简介 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 图文索引 ===== -->
+  <section class="jji-section" aria-labelledby="jjiIndexTitle">
+    <div class="jji-wrap">
+      <div class="jji-sec-head">
+        <div>
+          <span class="jji-sec-tag">Archive</span>
+          <h2 id="jjiIndexTitle">图文索引：久久黑料近期发布与更新归档</h2>
+          <p class="jji-sec-desc">按发布时间倒序整理，便于快速查找与收藏。</p>
+        </div>
+        <a class="jji-sec-more" href="#jji-feed">更新日志 →</a>
+      </div>
+      <div class="jji-index-list">
+        <article class="jji-index-item">
+          <img alt="社区菜场数字化改造图文封面，摊主使用电子屏的场景" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23eef2ed'/%3E%3Crect x='0' y='140' width='320' height='60' fill='%23c9d6c3'/%3E%3Crect x='34' y='48' width='110' height='74' rx='4' fill='%232f5d50'/%3E%3Crect x='44' y='58' width='90' height='40' rx='2' fill='%23f7faf5'/%3E%3Ccircle cx='200' cy='96' r='34' fill='%23e8453c'/%3E%3Crect x='200' y='130' width='34' height='48' fill='%23a82820'/%3E%3Crect x='250' y='70' width='28' height='108' rx='3' fill='%23c8a15a'/%3E%3C/svg%3E">
+          <div>
+            <h3>社区菜场的数字化改造，摊主们怎么看</h3>
+            <p>技术进入日常生活的真实摩擦与适应过程，附带三个月回访记录与摊主自述。</p>
+            <div class="jji-index-tags"><span>行业观察</span><span>社区</span><span>高清正版</span></div>
+          </div>
+          <span class="jji-index-num">01</span>
+        </article>
+        <article class="jji-index-item">
+          <img alt="夜班公交司机十年人物专题封面，夜色中的公交站台" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%2318182b'/%3E%3Ccircle cx='246' cy='52' r='24' fill='%23f2e7c4' opacity='.9'/%3E%3Crect y='140' width='320' height='60' fill='%23232438'/%3E%3Crect x='44' y='90' width='150' height='56' rx='8' fill='%233d4a6b'/%3E%3Crect x='58' y='100' width='38' height='24' rx='3' fill='%23cfe0ef'/%3E%3Crect x='106' y='100' width='38' height='24' rx='3' fill='%23cfe0ef'/%3E%3Ccircle cx='78' cy='150' r='13' fill='%23111218'/%3E%3Ccircle cx='78' cy='150' r='5' fill='%238b93a8'/%3E%3Ccircle cx='164' cy='150' r='13' fill='%23111218'/%3E%3Ccircle cx='164' cy='150' r='5' fill='%238b93a8'/%3E%3Crect x='232' y='118' width='8' height='42' fill='%23c8a15a'/%3E%3Crect x='222' y='104' width='28' height='16' rx='3' fill='%23e8453c'/%3E%3C/svg%3E">
+          <div>
+            <h3>夜班公交司机的十年：城市深夜的固定坐标</h3>
+            <p>一条线路、一张面孔，与无数陌生乘客的交集。访谈与跟拍穿插呈现。</p>
+            <div class="jji-index-tags"><span>人物</span><span>城市生活</span><span>原创</span></div>
+          </div>
+          <span class="jji-index-num">02</span>
+        </article>
+        <article class="jji-index-item">
+          <img alt="一条网传视频核查流程图封面，放大镜与时间轴元素" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23fbf7f0'/%3E%3Cpath d='M0 168 L320 168' stroke='%23d9d2c5' stroke-width='3'/%3E%3Ccircle cx='72' cy='72' r='28' fill='none' stroke='%23e8453c' stroke-width='7'/%3E%3Cpath d='M92 92 L118 118' stroke='%23e8453c' stroke-width='9' stroke-linecap='round'/%3E%3Crect x='152' y='52' width='124' height='8' rx='4' fill='%23181716' opacity='.7'/%3E%3Crect x='152' y='76' width='96' height='8' rx='4' fill='%23c8a15a'/%3E%3Crect x='152' y='100' width='112' height='8' rx='4' fill='%23181716' opacity='.3'/%3E%3Ccircle cx='176' cy='140' r='7' fill='%23e8453c'/%3E%3Ccircle cx='216' cy='140' r='7' fill='%23c8a15a'/%3E%3Ccircle cx='256' cy='140' r='7' fill='%232f5d50'/%3E%3C/svg%3E">
+          <div>
+            <h3>三分钟观察：一条网传视频的十二小时核查</h3>
+            <p>从截图溯源到现场比对，完整展示事实核查流程，附核查工具清单。</p>
+            <div class="jji-index-tags"><span>知识科普</span><span>事实核查</span><span>实用技巧</span></div>
+          </div>
+          <span class="jji-index-num">03</span>
+        </article>
+        <article class="jji-index-item">
+          <img alt="创作者共创计划第二期手艺人专题封面，木工工具与手部特写" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23f3e8d8'/%3E%3Crect y='150' width='320' height='50' fill='%23d7b98e'/%3E%3Crect x='46' y='58' width='18' height='94' rx='4' fill='%238a5a2b' transform='rotate(-14 55 105)'/%3E%3Crect x='78' y='54' width='18' height='98' rx='4' fill='%236b4420' transform='rotate(8 87 103)'/%3E%3Ccircle cx='196' cy='94' r='40' fill='%23e8453c' opacity='.85'/%3E%3Cpath d='M172 94 h48 M196 70 v48' stroke='%23fbf7f0' stroke-width='5' stroke-linecap='round'/%3E%3Crect x='252' y='76' width='40' height='70' rx='4' fill='%232f5d50'/%3E%3C/svg%3E">
+          <div>
+            <h3>第二期：手艺人的一天 · 共创作品合辑</h3>
+            <p>七位创作者用各自的方法记录手艺人，从清晨备料到收工整理，细节丰富。</p>
+            <div class="jji-index-tags"><span>手作</span><span>创作幕后</span><span>社区</span></div>
+          </div>
+          <span class="jji-index-num">04</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 用户评价 ===== -->
+  <section class="jji-section" id="jji-voices" aria-labelledby="jjiVoicesTitle">
+    <div class="jji-wrap">
+      <div class="jji-sec-head">
+        <div>
+          <span class="jji-sec-tag">Community</span>
+          <h2 id="jjiVoicesTitle">用户评价：来自久久黑料社区的真实反馈</h2>
+          <p class="jji-sec-desc">这些评价来自不同观看场景，包含对内容、体验与社区氛围的多维反馈。</p>
+        </div>
+      </div>
+      <div class="jji-quotes-grid">
+        <article class="jji-quote">
+          <p>第一次看到《凌晨四点的批发市场》，以为是猎奇题材，看完发现镜头非常克制。没有煽情配乐，只有现场声音，反而让人记住那些具体的人。</p>
+          <div class="jji-quote-foot">
+            <span class="jji-quote-avatar" style="background:#e8453c">顾</span>
+            <b>顾一川</b><span>· 长期观众</span>
+            <span class="jji-stars">★★★★★</span>
+          </div>
+        </article>
+        <article class="jji-quote">
+          <p>作为媒体从业者，我很认可久久黑料的事实核查流程。每期视频都会标注信息来源，这在当下很难得，值得同行参考。</p>
+          <div class="jji-quote-foot">
+            <span class="jji-quote-avatar" style="background:#2f5d50">郝</span>
+            <b>郝新闻</b><span>· 媒体从业者</span>
+            <span class="jji-stars">★★★★★</span>
+          </div>
+        </article>
+        <article class="jji-quote">
+          <p>画质确实高清，纪录片质感很稳。唯一想提的小建议是希望增加竖屏短版，通勤路上看长片不太方便。</p>
+          <div class="jji-quote-foot">
+            <span class="jji-quote-avatar" style="background:#6b5b8e">米</span>
+            <b>米粒不加糖</b><span>· 社区用户</span>
+            <span class="jji-stars">★★★★☆</span>
+          </div>
+        </article>
+        <article class="jji-quote">
+          <p>我投过一次线索，没想到真的收到回复，还被告知后续会跟进。这种被认真对待的感觉，比任何宣传都更有说服力。</p>
+          <div class="jji-quote-foot">
+            <span class="jji-quote-avatar" style="background:#c8a15a">老</span>
+            <b>老周在城南</b><span>· 线索提供者</span>
+            <span class="jji-stars">★★★★★</span>
+          </div>
+        </article>
+        <article class="jji-quote">
+          <p>专题企划的持续更新让我养成了每周三打开的习惯。三条内容线各有侧重，不会全是同一种情绪，这点很舒服。</p>
+          <div class="jji-quote-foot">
+            <span class="jji-quote-avatar" style="background:#3d4a6b">沈</span>
+            <b>沈一九</b><span>· 内容收藏者</span>
+            <span class="jji-stars">★★★★★</span>
+          </div>
+        </article>
+        <article class="jji-quote">
+          <p>创作者访谈写得很实在，不是互相吹捧。能感觉到平台在认真做内容生态，而不是只追流量。</p>
+          <div class="jji-quote-foot">
+            <span class="jji-quote-avatar" style="background:#a82820">林</span>
+            <b>林间有风</b><span>· 独立创作者</span>
+            <span class="jji-stars">★★★★☆</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 企业动态 + 合作品牌 ===== -->
+  <section class="jji-section" id="jji-feed" aria-labelledby="jjiFeedTitle">
+    <div class="jji-wrap jji-two-col">
+      <div>
+        <div class="jji-sec-head" style="margin-bottom:20px">
+          <div>
+            <span class="jji-sec-tag">Updates</span>
+            <h2 id="jjiFeedTitle">企业动态与内容更新日志</h2>
+          </div>
+        </div>
+        <ul class="jji-feed">
+          <li>
+            <time datetime="2026-11-20">11-20</time>
+            <div>
+              <h3>《真相回响》第三季正式上线，首期聚焦城市更新</h3>
+              <p>发布首日播放量突破 12 万，社区讨论区同步开放，主创将于本周五进行直播回应对谈。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-15">11-15</time>
+            <div>
+              <h3>创作者共创计划第三期「社区记忆档案」开放报名</h3>
+              <p>面向独立创作者征集 3 至 10 分钟短片，入选作品将获得拍摄支持与官方发布资源。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11-06</time>
+            <div>
+              <h3>平台完成高清播放链路升级，加载速度提升明显</h3>
+              <p>全端支持 1080P 自适应播放，移动端流量提示更清晰，观看体验持续优化。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-10-28">10-28</time>
+            <div>
+              <h3>久久黑料与三家纪实影像机构达成内容合作</h3>
+              <p>未来将在联合出品、素材共享与创作者培训方面展开长期协作，共同推动原创深度内容。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="jji-sec-head" style="margin-bottom:20px">
+          <div>
+            <span class="jji-sec-tag">Partners</span>
+            <h2>合作品牌与伙伴</h2>
+          </div>
+        </div>
+        <div class="jji-partners">
+          <div class="jji-partner">城市观察档案</div>
+          <div class="jji-partner">纪实影像联盟</div>
+          <div class="jji-partner">青年创作者基金</div>
+          <div class="jji-partner">社区文化行动</div>
+        </div>
+        <p style="font-size:13px;color:var(--ink-soft);margin-top:20px;line-height:1.8">我们与机构、品牌及社区组织共同探索深度内容的可持续方式。合作围绕联合出品、议题共建与创作者支持展开，所有合作内容均保持编辑独立与来源透明。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="jji-section" id="jji-faq" aria-labelledby="jjiFaqTitle">
+    <div class="jji-wrap jji-faq-wrap">
+      <div class="jji-faq-intro">
+        <span class="jji-sec-tag">FAQ</span>
+        <h2 id="jjiFaqTitle">常见问题：关于久久黑料官网与内容使用</h2>
+        <p>如果你对平台定位、内容授权、投稿流程或账号使用有疑问，可以先查看以下解答。未能解决的问题可通过帮助入口反馈。</p>
+        <div class="jji-faq-contact">
+          <b>还需要帮助？</b>
+          编辑部与社区运营团队会在工作日 48 小时内回复，投稿与线索反馈建议附上可核实的信息来源。
+          <br>
+          <button type="button" id="jjiFeedbackBtn">提交反馈</button>
+        </div>
+      </div>
+      <div class="jji-faq-list">
+        <details open>
+          <summary>久久黑料是做什么的？</summary>
+          <div class="jji-faq-a">久久黑料是一个原创深度视频品牌与内容社区，主要通过长纪录片、轻量观察栏目和创作者共创计划，呈现事件背后的人物与细节。官方网站提供内容浏览、收藏、评论与投稿入口。</div>
+        </details>
+        <details>
+          <summary>平台内容可以转载或二次使用吗？</summary>
+          <div class="jji-faq-a">所有原创内容版权归久久黑料及对应创作者所有。规范转载需获得书面授权并保留完整署名与来源信息；商业用途、二次剪辑与改编需单独申请授权。请在联系时说明使用场景与范围。</div>
+        </details>
+        <details>
+          <summary>如何向久久黑料提供线索或投稿？</summary>
+          <div class="jji-faq-a">可以通过页面上的「投稿 / 提供线索」按钮提交基本信息，建议附上时间、地点与可核实的来源。编辑部会对线索进行初步评估，并在需要跟进时联系提交者。请勿提交未核实或涉及他人隐私的内容。</div>
+        </details>
+        <details>
+          <summary>观看时播放不流畅怎么办？</summary>
+          <div class="jji-faq-a">建议优先检查网络连接，并尝试切换清晰度。平台已支持自适应高清播放；如持续出现问题，可通过反馈入口提交设备型号与观看时间，技术团队会进行排查。</div>
+        </details>
+        <details>
+          <summary>创作者共创计划对作品有哪些要求？</summary>
+          <div class="jji-faq-a">作品需为原创，时长建议 3 至 10 分钟，题材围绕真实生活、人物或公共议题。提交时请附创作说明与素材来源清单，入选后将获得拍摄指导、剪辑协作与官方发布渠道支持。</div>
+        </details>
+        <details>
+          <summary>评论区的讨论规范是什么？</summary>
+          <div class="jji-faq-a">社区倡导就事论事、尊重当事人的讨论氛围。请勿发布人身攻击、未经核实的指控或他人隐私信息。对于违反规范的评论，运营团队会视情况隐藏或移除，并保留进一步处理的可能。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="jji-footer">
+  <div class="jji-wrap">
+    <div class="jji-footer-grid">
+      <div>
+        <div class="jji-footer-brand">
+          <span class="jji-brand-mark" aria-hidden="true"></span>
+          <span class="jji-brand-name">久久黑料<small>JIUJIU DEEP</small></span>
+        </div>
+        <p>久久黑料官方网站 · 原创深度视频品牌。坚持真实、专业与持续运营，为创作者与企业搭建高品质内容生态，以影像记录复杂世界，让事实拥有力量。</p>
+      </div>
+      <div>
+        <h3>内容导航</h3>
+        <ul>
+          <li><a href="#jji-analysis">品牌深度解析</a></li>
+          <li><a href="#jji-hot">热点榜单</a></li>
+          <li><a href="#jji-topics">专题企划</a></li>
+          <li><a href="#jji-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>社区与支持</h3>
+        <ul>
+          <li><a href="#jji-voices">用户评价</a></li>
+          <li><a href="#jji-faq">帮助中心</a></li>
+          <li><a href="#jji-feed">企业动态</a></li>
+          <li><button type="button" id="jjiFooterSubmit" style="font-size:13px;color:#a49e92">投稿入口</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="jji-footer-bottom">
+      <span>© 2026 久久黑料 版权所有 · 持续运营中 · 原创内容受版权保护</span>
+      <span>备案号：京ICP备2026JJBK01号 · 品牌官网 · 官方发布</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== 回到顶部 ===== -->
+<button class="jji-top-btn" id="jjiTopBtn" type="button" aria-label="回到顶部">↑</button>
+
+<!-- ===== Toast ===== -->
+<div class="jji-toast" id="jjiToast" role="status" aria-live="polite"></div>
+
+<!-- ===== 通用弹窗（作者 / 投稿 / 反馈） ===== -->
+<div class="jji-modal-mask" id="jjiModalMask">
+  <div class="jji-modal" role="dialog" aria-modal="true" aria-labelledby="jjiModalTitle">
+    <button class="jji-modal-close" id="jjiModalClose" type="button" aria-label="关闭弹窗">×</button>
+    <h3 id="jjiModalTitle">标题</h3>
+    <div id="jjiModalBody"></div>
+    <div class="jji-modal-actions" id="jjiModalActions">
+      <button class="jji-modal-ok" id="jjiModalOk" type="button">确定</button>
+      <button class="jji-modal-cancel" id="jjiModalCancel" type="button">取消</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ========== 移动端导航折叠 ========== */
+  var navToggle = document.getElementById('jjiNavToggle');
+  var nav = document.getElementById('jjiNav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('jji-nav-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.textContent = open ? '×' : '☰';
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 820) {
+        nav.classList.remove('jji-nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.textContent = '☰';
+      }
+    });
+  }
+
+  /* ========== Toast ========== */
+  var toast = document.getElementById('jjiToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('jji-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toast.classList.remove('jji-show');
+    }, 2400);
+  }
+
+  /* ========== 搜索前端反馈 ========== */
+  var searchInput = document.getElementById('jjiSearchInput');
+  var searchBtn = document.getElementById('jjiSearchBtn');
+  var searchFeedback = document.getElementById('jjiSearchFeedback');
+  var searchMap = [
+    { key: '批发', tip: '《凌晨四点的批发市场》· 真相回响第12期' },
+    { key: '书店', tip: '《消失的街角书店》· 城市纪实' },
+    { key: '工厂', tip: '《工厂流水线上的年轻人》· 人物访谈' },
+    { key: '核查', tip: '《一条网传视频的十二小时核查》· 三分钟观察' },
+    { key: '公交', tip: '《夜班公交司机的十年》· 人物' },
+    { key: '菜场', tip: '《社区菜场的数字化改造》· 行业观察' },
+    { key: '手作', tip: '《手艺人的一天》· 共创作品合辑' },
+    { key: '林深', tip: '创作者：林深 · 深度调查 · 城市议题' },
+    { key: '周与岸', tip: '创作者：周与岸 · 人物访谈 · 行业观察' }
+  ];
+  function doSearch(){
+    if (!searchInput || !searchFeedback) return;
+    var q = searchInput.value.trim();
+    if (!q) {
+      searchFeedback.textContent = '请输入关键词，如「批发市场」「核查」「创作者」后再搜索。';
+      searchFeedback.classList.add('jji-show');
+      return;
+    }
+    var hit = null;
+    for (var i = 0; i < searchMap.length; i++) {
+      if (q.indexOf(searchMap[i].key) !== -1 || searchMap[i].key.indexOf(q) !== -1) {
+        hit = searchMap[i];
+        break;
+      }
+    }
+    if (hit) {
+      searchFeedback.textContent = '找到相关内容：' + hit.tip + '。可前往热点榜单或专题企划查看。';
+    } else {
+      searchFeedback.textContent = '暂未直接匹配「' + q + '」。建议尝试更短的关键词，或点击热点榜单浏览全部内容。';
+    }
+    searchFeedback.classList.add('jji-show');
+  }
+  if (searchBtn) searchBtn.addEventListener('click', doSearch);
+  if (searchInput) {
+    searchInput.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if (searchFeedback && !searchInput.value.trim()) {
+        searchFeedback.classList.remove('jji-show');
+      }
+    });
+  }
+
+  /* ========== 点赞 / 收藏 ========== */
+  document.querySelectorAll('.jji-like-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var base = parseInt(btn.getAttribute('data-like'), 10) || 0;
+      var liked = btn.classList.toggle('jji-liked');
+      var num = liked ? base + 1 : base;
+      btn.innerHTML = (liked ? '♥ ' : '♥ ') + (num >= 10000 ? (num / 10000).toFixed(2).replace(/\.00$/, '') + '万' : num);
+      showToast(liked ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('.jji-save-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('jji-saved');
+      var base = btn.getAttribute('data-save') || '';
+      btn.innerHTML = saved ? '★ 已收藏' : '☆ 收藏';
+      showToast(saved ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* ========== 复制链接 ========== */
+  document.querySelectorAll('.jji-copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = btn.getAttribute('data-copy') || '久久黑料 · 原创深度视频';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('内容标题已复制，可分享给朋友');
+        }).catch(function(){
+          showToast('复制失败，请手动选择标题复制');
+        });
+      } else {
+        showToast('当前浏览器暂不支持自动复制，请手动选择标题复制');
+      }
+    });
+  });
+
+  /* ========== 通用弹窗 ========== */
+  var mask = document.getElementById('jjiModalMask');
+  var modalTitle = document.getElementById('jjiModalTitle');
+  var modalBody = document.getElementById('jjiModalBody');
+  var modalActions = document.getElementById('jjiModalActions');
+  var modalOk = document.getElementById('jjiModalOk');
+  var modalCancel = document.getElementById('jjiModalCancel');
+  var modalClose = document.getElementById('jjiModalClose');
+  var lastFocus = null;
+
+  function openModal(title, html, okText, showActions){
+    lastFocus = document.activeElement;
+    if (modalTitle) modalTitle.textContent = title;
+    if (modalBody) modalBody.innerHTML = html;
+    if (modalOk) modalOk.textContent = okText || '确定';
+    if (modalActions) modalActions.style.display = showActions === false ? 'none' : 'flex';
+    if (mask) mask.classList.add('jji-open');
+    document.body.style.overflow = 'hidden';
+    var focusEl = mask ? mask.querySelector('input, textarea, button') : null;
+    if (focusEl && typeof focusEl.focus === 'function') setTimeout(function(){ focusEl.focus(); }, 60);
+  }
+  function closeModal(){
+    if (mask) mask.classList.remove('jji-open');
+    document.body.style.overflow = '';
+    if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+  }
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (modalCancel) modalCancel.addEventListener('click', closeModal);
+  if (modalOk) modalOk.addEventListener('click', function(){
+    var formField = modalBody ? modalBody.querySelector('input, textarea') : null;
+    closeModal();
+    if (formField && formField.value.trim()) {
+      showToast('已收到，感谢你的参与');
+    } else {
+      showToast('已记录你的操作');
+    }
+  });
+  if (mask) {
+    mask.addEventListener('click', function(e){
+      if (e.target === mask) closeModal();
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && mask.classList.contains('jji-open')) closeModal();
+    });
+  }
+
+  /* ========== 作者简介弹窗 ========== */
+  document.querySelectorAll('.jji-author-open').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-name') || '创作者';
+      var field = btn.getAttribute('data-field') || '';
+      var desc = btn.getAttribute('data-desc') || '';
+      openModal(name + ' · 创作者档案',
+        '<p><b>擅长领域：</b>' + field + '</p>' +
+        '<p>' + desc + '</p>' +
+        '<p style="font-size:12.5px;color:#928c82;margin-bottom:0">久久黑料创作者矩阵成员 · 作品持续更新中</p>',
+        '关注该创作者', true);
+    });
+  });
+
+  /* ========== 投稿 / 线索 / 反馈弹窗 ========== */
+  function openSubmitModal(){
+    openModal('投稿 / 提供线索',
+      '<p>请简要描述内容线索或投稿方向。编辑部会在工作日 48 小时内查看，重要线索将安排进一步沟通。</p>' +
+      '<label for="jjiSubmitTitle">标题或主题</label>' +
+      '<input id="jjiSubmitTitle" type="text" placeholder="例如：某社区旧改中的公共空间变化">' +
+      '<label for="jjiSubmitDetail">详细说明</label>' +
+      '<textarea id="jjiSubmitDetail" rows="3" placeholder="时间、地点、可核实的来源与联系方式（可选）"></textarea>',
+      '提交', true);
+  }
+  function openFeedbackModal(){
+    openModal('提交反馈',
+      '<p>欢迎反馈观看体验、内容建议或社区问题。你的意见会帮助久久黑料持续优化。</p>' +
+      '<label for="jjiFeedbackText">反馈内容</label>' +
+      '<textarea id="jjiFeedbackText" rows="3" placeholder="请描述你遇到的问题或建议"></textarea>',
+      '提交反馈', true);
+  }
+  var submitBtn = document.getElementById('jjiSubmitBtn');
+  var footerSubmit = document.getElementById('jjiFooterSubmit');
+  var feedbackBtn = document.getElementById('jjiFeedbackBtn');
+  if (submitBtn) submitBtn.addEventListener('click', openSubmitModal);
+  if (footerSubmit) footerSubmit.addEventListener('click', openSubmitModal);
+  if (feedbackBtn) feedbackBtn.addEventListener('click', openFeedbackModal);
+
+  /* ========== 回到顶部 ========== */
+  var topBtn = document.getElementById('jjiTopBtn');
+  function onScroll(){
+    if (!topBtn) return;
+    if (window.scrollY > 520) {
+      topBtn.classList.add('jji-show');
+    } else {
+      topBtn.classList.remove('jji-show');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (topBtn) topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ========== FAQ 同时只展开一项（可选增强） ========== */
+  var faqDetails = document.querySelectorAll('.jji-faq-list details');
+  faqDetails.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if (d.open) {
+        faqDetails.forEach(function(other){
+          if (other !== d) other.open = false;
+        });
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+  </html>
